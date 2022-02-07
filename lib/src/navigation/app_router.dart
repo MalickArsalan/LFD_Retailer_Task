@@ -27,6 +27,9 @@ class AppRouter extends RouterDelegate
   Widget build(BuildContext context) {
     return Navigator(
       key: navigatorKey,
+      pages: [
+        if (!appStateManager.isInitialized) SplashScreen.page(),
+      ],
     );
   }
 
