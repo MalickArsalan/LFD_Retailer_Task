@@ -33,13 +33,16 @@ class ContainerHeader extends StatelessWidget {
               )
             ],
           ),
-          Container(
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(100),
-                border: Border.all(width: 5, color: Colors.green)),
-            child: Icon(
-              Icons.cancel,
-              color: Colors.green,
+          IconButton(
+            onPressed: () {},
+            icon: Container(
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(100),
+                  border: Border.all(width: 4, color: Colors.green)),
+              child: Icon(
+                Icons.cancel,
+                color: Colors.green,
+              ),
             ),
           ),
         ],
